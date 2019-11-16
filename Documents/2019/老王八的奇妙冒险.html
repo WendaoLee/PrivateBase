@@ -1,0 +1,723 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>老王八的奇妙冒险</title><link href='https://fonts.loli.net/css?family=PT+Serif:400,400italic,700,700italic&subset=latin,cyrillic-ext,cyrillic,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; tab-size: 4; background-position: inherit inherit; background-repeat: inherit inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 40px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+@media screen and (max-width: 500px) { 
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; }
+button, input, select, textarea { color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 2; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.701961); color: rgb(85, 85, 85); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px !important; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right-width: 0px; background-color: inherit; }
+.CodeMirror-linenumber { }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; position: relative !important; background-position: inherit inherit; background-repeat: inherit inherit; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; background-position: 0px 0px; background-repeat: initial initial; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print { 
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid-page; break-before: avoid-page; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  html.blink-to-pdf { font-size: 13px; }
+  .typora-export #write { padding-left: 32px; padding-right: 32px; padding-bottom: 0px; break-after: avoid-page; }
+  .typora-export #write::after { height: 0px; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background-color: rgb(204, 204, 204); display: block; overflow-x: hidden; background-position: initial initial; background-repeat: initial initial; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) { 
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; background-position: initial initial; background-repeat: initial initial; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; }
+a.md-print-anchor { white-space: pre !important; border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; text-shadow: initial !important; background-position: 0px 0px !important; background-repeat: initial initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
+.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="mermaid"] svg, [lang="flow"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom-width: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+
+
+/* meyer reset -- http://meyerweb.com/eric/tools/css/reset/ , v2.0 | 20110126 | License: none (public domain) */
+
+@include-when-export url(https://fonts.loli.net/css?family=PT+Serif:400,400italic,700,700italic&subset=latin,cyrillic-ext,cyrillic,latin-ext);
+
+/* =========== */
+
+:root {
+	--active-file-bg-color: #dadada;
+	--active-file-bg-color: rgba(32, 43, 51, 0.63);
+	--active-file-text-color: white;
+	--bg-color: #f3f2ee;
+	--text-color: #1f0909;
+	--control-text-color: #444;
+	--rawblock-edit-panel-bd: #e5e5e5;
+
+	--select-text-bg-color: rgba(32, 43, 51, 0.63);
+  --select-text-font-color: white;
+}
+
+pre {
+	--select-text-bg-color: #36284e;
+	--select-text-font-color: #fff;
+}
+
+html {
+	font-size: 16px;
+}
+
+html, body {
+	background-color: #f3f2ee;
+	font-family: "PT Serif", 'Times New Roman', Times, serif;
+	color: #1f0909;
+	line-height: 1.5em;
+}
+
+/*#write {
+	overflow-x: auto;
+    max-width: initial;
+	padding-left: calc(50% - 17em);
+    padding-right: calc(50% - 17em);
+}
+
+@media (max-width: 36em) {
+ 	#write {
+ 		padding-left: 1em;
+    	padding-right: 1em;
+ 	}
+}*/
+
+#write {
+	max-width: 40em;
+}
+
+ol li {
+	list-style-type: decimal;
+	list-style-position: outside;
+}
+ul li {
+	list-style-type: disc;
+	list-style-position: outside;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* styles */
+
+/* ====== */
+
+/* headings */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: bold;
+}
+h1 {
+	font-size: 1.875em;
+	/*30 / 16*/
+	line-height: 1.6em;
+	/* 48 / 30*/
+	margin-top: 2em;
+}
+h2,
+h3 {
+	font-size: 1.3125em;
+	/*21 / 16*/
+	line-height: 1.15;
+	/*24 / 21*/
+	margin-top: 2.285714em;
+	/*48 / 21*/
+	margin-bottom: 1.15em;
+	/*24 / 21*/
+}
+h3 {
+	font-weight: normal;
+}
+h4 {
+	font-size: 1.125em;
+	/*18 / 16*/
+	margin-top: 2.67em;
+	/*48 / 18*/
+}
+h5,
+h6 {
+	font-size: 1em;
+	/*16*/
+}
+h1 {
+	border-bottom: 1px solid;
+	margin-bottom: 1.875em;
+	padding-bottom: 0.8125em;
+}
+/* links */
+
+a {
+	text-decoration: none;
+	color: #065588;
+}
+a:hover,
+a:active {
+	text-decoration: underline;
+}
+/* block spacing */
+
+p,
+blockquote,
+.md-fences {
+	margin-bottom: 1.5em;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-bottom: 1.5em;
+}
+/* blockquote */
+
+blockquote {
+	font-style: italic;
+	border-left: 5px solid;
+	margin-left: 2em;
+	padding-left: 1em;
+}
+/* lists */
+
+ul,
+ol {
+	margin: 0 0 1.5em 1.5em;
+}
+/* tables */
+.md-meta,.md-before, .md-after {
+	color:#999;
+}
+
+table {
+	margin-bottom: 1.5em;
+	/*24 / 16*/
+	font-size: 1em;
+	/* width: 100%; */
+}
+thead th,
+tfoot th {
+	padding: .25em .25em .25em .4em;
+	text-transform: uppercase;
+}
+th {
+	text-align: left;
+}
+td {
+	vertical-align: top;
+	padding: .25em .25em .25em .4em;
+}
+
+code,
+.md-fences {
+	background-color: #dadada;
+}
+
+code {
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+.md-fences {
+	margin-left: 2em;
+	margin-bottom: 3em;
+	padding-left: 1ch;
+	padding-right: 1ch;
+}
+
+pre,
+code,
+tt {
+	font-size: .875em;
+	line-height: 1.714285em;
+}
+/* some fixes */
+
+h1 {
+	line-height: 1.3em;
+	font-weight: normal;
+	margin-bottom: 0.5em;
+}
+
+p + ul,
+p + ol{
+	margin-top: .5em;
+}
+
+h3 + ul,
+h4 + ul,
+h5 + ul,
+h6 + ul,
+h3 + ol,
+h4 + ol,
+h5 + ol,
+h6 + ol {
+	margin-top: .5em;
+}
+
+li > ul,
+li > ol {
+	margin-top: inherit;
+	margin-bottom: 0;
+}
+
+li ol>li {
+	list-style-type: lower-alpha;
+}
+
+li li ol>li{
+	list-style-type: lower-roman;
+}
+
+h2,
+h3 {
+	margin-bottom: .75em;
+}
+hr {
+	border-top: none;
+	border-right: none;
+	border-bottom: 1px solid;
+	border-left: none;
+}
+h1 {
+	border-color: #c5c5c5;
+}
+blockquote {
+	border-color: #bababa;
+	color: #656565;
+}
+
+blockquote ul,
+blockquote ol {
+	margin-left:0;
+}
+
+.ty-table-edit {
+	background-color: transparent;
+}
+thead {
+	background-color: #dadada;
+}
+tr:nth-child(even) {
+	background: #e8e7e7;
+}
+hr {
+	border-color: #c5c5c5;
+}
+.task-list{
+	padding-left: 1rem;
+}
+
+.md-task-list-item {
+	padding-left: 1.5rem;
+	list-style-type: none;
+}
+
+.md-task-list-item > input:before {
+	content: '\221A';
+	display: inline-block;
+	width: 1.25rem;
+  	height: 1.6rem;
+	vertical-align: middle;
+	text-align: center;
+	color: #ddd;
+	background-color: #F3F2EE;
+}
+
+.md-task-list-item > input:checked:before,
+.md-task-list-item > input[checked]:before{
+	color: inherit;
+}
+
+#write pre.md-meta-block {
+	min-height: 1.875rem;
+	color: #555;
+	border: 0px;
+	background: transparent;
+	margin-top: -4px;
+	margin-left: 1em;
+	margin-top: 1em;
+}
+
+.md-image>.md-meta {
+	color: #9B5146;
+}
+
+.md-image>.md-meta{
+	font-family: Menlo, 'Ubuntu Mono', Consolas, 'Courier New', 'Microsoft Yahei', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', serif;
+}
+
+
+#write>h3.md-focus:before{
+	left: -1.5rem;
+	color:#999;
+	border-color:#999;
+}
+#write>h4.md-focus:before{
+	left: -1.5rem;
+	top: .25rem;
+	color:#999;
+	border-color:#999;
+}
+#write>h5.md-focus:before{
+	left: -1.5rem;
+	top: .0.3125rem;
+	color:#999;
+	border-color:#999;
+}
+#write>h6.md-focus:before{
+	left: -1.5rem;
+	top: 0.3125rem;
+	color:#999;
+	border-color:#999;
+}
+
+.md-toc:focus .md-toc-content{
+	margin-top: 19px;
+}
+
+.md-toc-content:empty:before{
+	color: #065588;
+}
+.md-toc-item {
+	color: #065588;
+}
+#write div.md-toc-tooltip {
+	background-color: #f3f2ee;
+}
+
+#typora-sidebar {
+	background-color: #f3f2ee;
+	-webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.375);
+  	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.375);
+}
+
+.pin-outline #typora-sidebar {
+	background: inherit;
+	box-shadow: none;
+	border-right: 1px dashed;
+}
+
+.pin-outline #typora-sidebar:hover .outline-title-wrapper {
+	border-left:1px dashed;
+}
+
+.outline-item:hover {
+  background-color: #dadada;
+  border-left: 28px solid #dadada;
+  border-right: 18px solid #dadada;
+}
+
+.typora-node .outline-item:hover {
+  	border-right: 28px solid #dadada;
+}
+
+.outline-expander:before {
+  content: "\f0da";
+  font-family: FontAwesome;
+  font-size:14px;
+  top: 1px;
+}
+
+.outline-expander:hover:before,
+.outline-item-open>.outline-item>.outline-expander:before {
+  content: "\f0d7";
+}
+
+.modal-content {
+	background-color: #f3f2ee;
+}
+
+.auto-suggest-container ul li {
+	list-style-type: none;
+}
+
+/** UI for electron */
+
+.megamenu-menu,
+#top-titlebar, #top-titlebar *,
+.megamenu-content {
+	background: #f3f2ee;
+	color: #1f0909;
+}
+
+.megamenu-menu-header {
+	border-bottom: 1px dashed #202B33;
+}
+
+.megamenu-menu {
+	box-shadow: none;
+	border-right: 1px dashed;
+}
+
+header, .context-menu, .megamenu-content, footer {
+	font-family: "PT Serif", 'Times New Roman', Times, serif;
+    color: #1f0909;
+}
+
+#megamenu-back-btn {
+	color: #1f0909;
+	border-color: #1f0909;
+}
+
+.megamenu-menu-header #megamenu-menu-header-title:before {
+	color: #1f0909;
+}
+
+.megamenu-menu-list li a:hover, .megamenu-menu-list li a.active {
+	color: inherit;
+	background-color: #e8e7df;
+}
+
+.long-btn:hover {
+	background-color: #e8e7df;
+}
+
+#recent-file-panel tbody tr:nth-child(2n-1) {
+    background-color: transparent !important;
+}
+
+.megamenu-menu-panel tbody tr:hover td:nth-child(2) {
+    color: inherit;
+}
+
+.megamenu-menu-panel .btn {
+	background-color: #D2D1D1;
+}
+
+.btn-default {
+	background-color: transparent;
+}
+
+.typora-sourceview-on #toggle-sourceview-btn,
+.ty-show-word-count #footer-word-count {
+	background: #c7c5c5;
+}
+
+#typora-quick-open {
+    background-color: inherit;
+}
+
+.md-diagram-panel {
+	margin-top: 8px;
+}
+
+.file-list-item-file-name {
+	font-weight: initial;
+}
+
+.file-list-item-summary {
+	opacity: 1;
+}
+
+.file-list-item {
+	color: #777;
+}
+
+.file-list-item.active {
+	background-color: inherit;
+	color: black;
+}
+
+.ty-side-sort-btn.active {
+	background-color: inherit;
+}
+
+.file-list-item.active .file-list-item-file-name  {
+	font-weight: bold;
+}
+
+.file-list-item{
+    opacity:1 !important;
+}
+
+.file-library-node.active>.file-node-background{
+	background-color: rgba(32, 43, 51, 0.63);
+	background-color: var(--active-file-bg-color);
+}
+
+.file-tree-node.active>.file-node-content{
+	color: white;
+	color: var(--active-file-text-color);
+}
+
+.md-task-list-item>input {
+	margin-left: -1.6em;
+	margin-top: calc(1rem - 12px);
+}
+
+input {
+	border: 1px solid #aaa;
+}
+
+.megamenu-menu-header #megamenu-menu-header-title,
+.megamenu-menu-header:hover, 
+.megamenu-menu-header:focus {
+	color: inherit;
+}
+
+.dropdown-menu .divider {
+	border-color: #e5e5e5;
+}
+
+/* https://github.com/typora/typora-issues/issues/2046 */
+.os-windows-7 strong,
+.os-windows-7 strong  {
+	font-weight: 760;
+}
+
+.ty-preferences .btn-default {
+	background: transparent;
+}
+
+.ty-preferences .window-header {
+	border-bottom: 1px dashed #202B33;
+	box-shadow: none;
+}
+
+ .typora-export li, .typora-export p, .typora-export,  .footnote-line {white-space: normal;} 
+</style>
+</head>
+<body class='typora-export' >
+<div  id='write'  class = 'is-mac'><h1><a name="老王八的奇妙冒险" class="md-header-anchor"></a><span>老王八的奇妙冒险</span></h1><p><span>注：目前暂时弃坑，也许将来的某一天会捡回来。</span></p><p><span>【目录】</span></p><div class='md-toc' mdtype='toc'><p class="md-toc-content"><span class="md-toc-item md-toc-h1" data-ref="n2"><a class="md-toc-inner" style="" href="#老王八的奇妙冒险">老王八的奇妙冒险</a></span><span class="md-toc-item md-toc-h2" data-ref="n5"><a class="md-toc-inner" style="" href="#零">零</a></span><span class="md-toc-item md-toc-h2" data-ref="n53"><a class="md-toc-inner" style="" href="#一">一</a></span><span class="md-toc-item md-toc-h2" data-ref="n119"><a class="md-toc-inner" style="" href="#二">二</a></span><span class="md-toc-item md-toc-h2" data-ref="n168"><a class="md-toc-inner" style="" href="#end">End</a></span><span class="md-toc-item md-toc-h3" data-ref="n186"><a class="md-toc-inner" style="" href="#"></a></span></p></div><p>&nbsp;</p><blockquote><p><span>“如果有一天你听到了别人听不到的东西，那会发生什么？”</span></p></blockquote><h2><a name="零" class="md-header-anchor"></a><span>零</span></h2><p><span>  眼下正是七月初，夏已渐深，燥热的空气中充斥着阵阵恬噪的蝉声。偏偏老王八又是位于南方的蔗浆省的某所重点高中的学生，既逢浆淮梅雨又逢期末考，空气既燥热又沉闷，加之备考与恬噪蝉声的折磨，老王八简直生不如死。而一想到如果考炸了回家又要被骂，老王八内心的绝望又多了几分。</span></p><p><span>  老王八本姓陈，大名易桃，乃是蔗浆省重点高中“晋云中学”的一只文理混搭狗。之所以得到“老王八&quot;这个尊号，是因为……他自己也记不清了。好像是初中时班里某个姓楼的女生先莫名其妙地开始叫他“老王八”，然后班里其他人觉得这名字很有灵气就跟着叫了，时间一长他就得到了”老王八“这个尊号。不过还好上了高中后，当初的大部分人都已经和他分开，除了个别损友外，如今基本上没有什么人会叫他这个名字，这让他着实松了一口气。</span></p><p><span>  但是学业让他喘不过气来。</span></p><p><span>  老王八是蔗浆省新高考政策下的小白鼠，享受着选科七选三的豪华鼠粮。因为政治不行物理太难，所以他选择文理混搭。但是一来他平日有些贪玩有些浪，二来晋中强在文科而并非理科，三来新高考政策下选考分数根据考生的排名来赋分，所以纵然他很聪明，博闻强识，但是成绩在年级里一直处于中游状态。家里的压力、未来的迷茫，让他在苦逼繁忙的高中生活中处于一种苦苦挣扎的状态。偶尔他在回家后会对月独酌一杯来排解压力，但是这又有什么用呢？生活里，该压过来的还是要压来，该茫然的还是要茫然。老王八依然是只苦苦挣扎的文理混搭狗，茫然而无所适从。</span></p><p><span>  现在，这只文理混搭狗正坐在教室上着自修，苦逼地复习着明日要考的化学。窗外蝉声阵阵，楼下是某些文科班的个别人极大的读书声，惹人烦躁得很。</span></p><p><span>  老王八有些心烦，狠狠地用笔在面前的化学复习资料上戳了一下。他用的是直液式的水笔，墨水很快渗进纸张，洇出一个墨黑的小洞。就在这时，突然从窗外飘进来一阵歌声：</span></p><p><span>  “候馆梅残，溪桥柳细。草薰风暖摇征辔。离愁渐远渐无穷，迢迢不断如春水。”</span></p><p><span>  是个女孩在唱歌。这声调很奇妙，时而气若游丝，时而婉转悠扬，不像是平常听到的歌曲那般很容易就找到节拍，像唱戏一样，但是老王八没由来的有一种感觉：这就是歌，是个女孩在唱歌。那个女孩的声音听起来幽幽弱弱的，但是铿锵顿挫、该有的都有。老王八一时间听得有些痴了，浑浑然不知自己所处何时何地。</span></p><p><span>  那女孩的歌声还在继续：</span></p><p><span>“  寸寸柔肠，盈盈粉泪。楼高莫近危阑倚。平芜尽处是春山，行人更在春山外。”</span></p><p><span>  声音明明还是那样的幽弱，但是却伤心了不少，老王八听着莫名地感到心酸。听到最后声断的时候老王八的心猛地那么一缩，在之前渲染的种种无言的悲恸在他心里顿时漫开，眼眶那么一紧，然后便泫然落泪了。</span></p><p><span>  他还握着那只笔，笔水还在渗透，小洞在逐渐扩大。</span></p><p><span>  坐在老王八旁边的宋杨央突然有一种说不出的奇妙感觉，他下意识地一偏头，却见旁边的老王八怔怔地握着一只笔，眼睛红红的正在流泪。宋杨央一阵惊悚，当场石化。试想一个大佬爷们本来在你旁边复习呢突然就哭了，这是压力太大呢还是感情受挫？宋杨央默默地探出根手指戳了一下老王八，小心翼翼问道：“阿槑你咋了？”</span></p><p><span>  阿槑是老王八在高中的新外号，也不知道老王八和阿槑这两个外号哪个更好些。不过也多亏宋杨央的这么一戳，老王八忽地从那种悲伤的情绪中回过神来，然后尴尬地发现自己哭了…..</span></p><p><span>  哭了......哭了......哭了......</span></p><p><span>  我靠我怎么会哭了？！</span></p><p><span>  这歌声有毒吧？我怎么在不知不觉中哭了？</span></p><p><span>  老王八瞬间崩溃。他张开嘴，想跟宋杨央解释一下，却发现自己哑口无言。一时间两人你看我我看你，一个红着眼流泪一个眼神怪异，场面凝滞了下来。末了，宋杨央尴尬一笑，伸出手拍了拍老王八的肩：“没事，都是男人，能懂。你继续哭，我不打扰了。”</span></p><p><span>  我他妈你懂了啥啊！老王八一急：“你没有听到外面有个小姑娘在唱歌吗？唱得很好听，飘来飘去的，我不知怎么了被带进去了然后就莫名其妙哭了——”宋杨央一怔：“哪里有小姑娘在唱歌？我没听到啊？”“还没有？你仔细听，很清楚的——”老王八还没说完，耳边那个姑娘邈邈幽怨的歌声突然消失了，下一刻另外一个男子的声音响起：</span></p><p><span>  “尊前拟把归期说，未语春容先惨咽。人生自是有情痴，此恨不关风与月。</span>
+<span>   离歌且莫翻新阕，一曲能教肠寸结。直须看尽洛城花，始共春风容易别。”</span></p><p><span>  男子的声音倒是很清朗，但听着会和之前的女孩一样让人莫名生起一股悲意来。宋杨央对着窗户侧耳聆听，却只听到外面的一阵阵蝉声，他搡了呆住的老王八一把：“哪有什么小姑娘在唱歌？你思春了？”</span></p><p><span>  老王八有些懵：“没，之前是一个小姑娘在唱歌，但现在已经换成一个男的的在唱歌了……”他没注意到这句话说完后宋杨央的表情变得有些怪异，只是继续自言自语式地问道：“你听不见？”</span></p><p><span>  “我听不见，我什么都听不见。你继续，我回去复习了。”宋杨央决绝地别过头，重新埋首面前的有机化学题，一边做一边暗暗思忖老王八到底是在演戏捉弄他还是真的学习压力太大压傻了。老王八满腔奇怪本想继续问他，却不知怎地在那阵歌声下神思恍惚了起来。那男声已经唱完原先的曲子，现在换了个新调在那里唱着：</span></p><p><span>  “越女采莲秋水畔。窄袖轻罗，暗露双金钏。照影摘花花似面。芳心只共丝争乱。</span>
+<span>   鸂鶒滩头风浪晚。雾重烟轻，不见来时伴。隐隐歌声归棹远。离愁引著江南岸。”</span></p><p><span>  很诡异地，老王八的意识开始模糊，思考的速度无缘故地慢了下来，以致于他没有心力去想这歌声是哪里飘来的、为什么在教学楼会有人唱歌还唱得那么好听，为什么……好像周围的人都没有听见而只有他听见了？</span></p><p><span>  那男子又把新调唱完了。神思恍惚间，老王八只听得又换了个男声在他耳边朗声念道：</span></p><p><span>  “阁外青山阁下江，阁中无主自开窗。春风欲拓滕王帖，蝴蝶入帘飞一双。”</span></p><p><span>  他的眼神开始溃散，手中一直握着的笔就这么松开了。他已经无法注意到原本他在资料上戳的墨洞已经有一元硬币大小，并且令人惊悚的是，即使笔已经不触碰着那里，那个墨洞依然在无声扩大——</span></p><p><span>  “菊瘦兰贫植谢家，愧无春色绘年华。剩来井底胭脂水，学画人间富贵花。”这回换了个清冷的女声在他耳旁吟诵。在她诵完后，又是另外一个女声响起：</span></p><p><span>  “神仙队里风流易，富贵场中本色难。”</span></p><p><span>  紧跟着又是一个有些嘶哑的男声：</span></p><p><span>  “楼台莺蝶春喧早，歌舞江山月坠迟。”</span></p><p><span>  随后那个男声念道：</span></p><p><span>  “歌到离亭声断续——”</span></p><p><span>  一个新的女声和道：</span></p><p><span>  “——人分淮浦影东西。”</span></p><p><span>  最后所有出现过的声音一齐响起，拖着声音在高声念唱：</span></p><p><span>  “且夫天地为炉兮，造化为工；阴阳为炭兮，万物为铜。合散消息兮，安有常则？千变万化兮，未始有极，忽然为人兮，何足控抟；化为异物兮，又何足患！小智自私兮，贱彼贵我；达人大观兮，物无不可。贪夫殉财兮，烈士殉名。夸者死权兮，品庶每生…...”</span></p><p><span>  老王八忽然清醒过来，却发现不知怎么他丧失了对身体的控制能力。耳边的合声声如洪钟，一字一字地敲打着他的耳膜、神经乃至他的灵魂。我日他妈到底是怎么回事？老王八在心里嘶声呐喊，能给点解释否？但是没人回答他，那耳边不知从何而来的声音依然在念唱，声音逐渐变得悲昂起来。</span></p><p><span>  ”…...怵迫之徒兮，或趋西东；大人不曲兮，意变齐同。愚士系俗兮，窘若囚拘；至人遗物兮，独与道俱。众人惑惑兮，好恶积亿；真人恬漠兮，独与道息。释智遗形兮，超然自丧；寥廓忽荒兮，与道翱翔。乘流则逝兮，得坻则止；纵躯委命兮，不私与己。其生兮若浮，其死兮若休；澹乎若深渊之静，泛乎若不系之舟。不以生故自宝兮，养空而浮；德人无累兮，知命不忧。细故蒂芥兮，何足以疑！“</span></p><p><span>  老王八感觉自己快要原地炸裂却动弹不得，他想求救但旁边的宋杨央已经沉迷在有机化学的魅力中了。甚至在旁人看来，他依然是那个安安分分坐着的姿势，只是放下了笔在座位发呆。老王八这回是真的想哭，就在这时，他突然瞥见自己之前在资料上戳的黑洞。此时黑洞已经不可思议地占据半页资料。而就在老王八的目光落在它上面时，那硕大的黑洞猛地在他的眼帘扩大，占据了他的整个视界，下一刻铺天盖地的震荡感传来，老王八只觉自己在刹那间闭上了眼，随后昏了过去。</span></p><blockquote><p><span>答案是：你会昏过去？</span></p></blockquote><p><span>                               ——欲知后事如何，且听下章（可能没有，我就写着玩玩）分解</span></p><hr /><blockquote><p><span>一个号称地府三常之一的、自名黑有常的王八蛋狠狠坑了我一把。然后我将要去异世界游玩？还要去王八国？         ——老王八</span></p></blockquote><h2><a name="一" class="md-header-anchor"></a><span>一</span></h2><p><span>  “我靠王八你怎么了！王八你不要死不要死啊！”有人在使劲摇晃老王八的身体。老王八困倦地睁开眼，发现自己正躺在地上，身后是一张已经倒了的椅子。</span></p><p><span>  高三教学楼的大教室……旁边是正看着自己哈哈大笑的应枫清，后面是正抓着自己双肩使劲摇晃一脸悲痛的老损友李小黑，周围有宋杨央、应照韩……自己是在晋中的教室？</span></p><p><span>  看样子我被人放倒了？</span></p><p><span>  老王八想起身，却发现自己浑身无力。正晃着他的老损友李小黑见他没什么反应，脸上的悲痛更盛了几分：“老王八！老王八！可怜的老王八！你就安心的去吧！这个月的党费我会帮你交的！”</span></p><p><span>  一旁的应枫清插了一句：“一个月党费一百，你帮他交？”</span></p><p><span>  “那还是算了……王八你就安心地去吧！我会帮你报仇的！”李小黑脸上的悲痛瞬间消失，取而代之的是大义凛然的神色，“应枫清，吃我一刀！”</span></p><p><span>  “喂明明是你把他放倒的好吧......”</span></p><p><span>  老王八实在是听不下去了，弱弱地开口：“放开我……我自己会起来。还有我只是预备党员，学生党员每月也只交两毛钱。党费不是这么算的啊！”</span></p><p><span>  李小黑笑嘻嘻地放开他，一边也不忘记继续损他：“不愧是老革命，至死都不忘组织的章程。实在是牛，佩服佩服。”说着对他竖起了跟大拇指。</span></p><p><span>  老王八冲他翻了个白眼，随后深吸一口气，找回自己的知觉，双手在旁边一撑站了起来。周围的环境还是自己熟悉的那个教室：黑框厚玻璃窗、能用刷卡打开的棕红橡木门、呈现橘橙色调的课桌；左前方是能够开投影进行投影一体式教学终端，正面是超大个的滑动黑板；在打笑的喧闹的一张张熟悉的面孔；头顶的空调在吹着冷风，同时电风扇在那儿刷刷地转动……没错的，自己还是在教室里。但是已经下课并且是大课间了吗？不然为什么李小黑这个在自己楼下的楼下的文科生会跑到自己班里来串班？</span></p><p><span>  记忆突然错乱了起来。记得自己上一秒似乎还坐在宋杨央旁边安安静静地自修的…...怎么突然自己就被放倒了？之前发生了什么？好像有人在自己耳边念着什么？贼他妈吵的那种？老王八有些懵。</span></p><p><span>  “且夫天地为炉兮，造化为工；阴阳为炭兮，万物为铜……”旁边忽然传来吟诵声，老王八顿时一惊，回头发现李小黑正在那里摇头晃脑地念着什么，一种无名的恼怒忽地就这么涌上心头。他一拳打去，怒道：“小黑你在念什么？！”</span></p><p><span>  这一拳虽然不轻不重，但李小黑脸上却尽是委屈，他指了指桌上的一本本子：“我靠我怎么了，这段话不是你自己写在本子上的吗？干嘛要打我？”</span></p><p><span>  “什么？”王八茫然地向他指的本子看去，一个一元硬币大小的黑洞瞬间跳进他的眼帘。眼皮猛地那么一跳，一种不详的预感在他心里升起。这时他的双肩突然被人抓住，而后一个人俯身在他耳边阴恻恻道：“怎样？惊不惊喜意不意外？”</span></p><p><span>  周围的场景突然模糊起来，一切瞬间停滞。老王八可以看见应枫清一脸猥笑正在张嘴想说些什么，但是他就那么停在了这里；头顶的风扇原本还在那一圈圈地扇着，此刻突然带着它的残影凝固了；周围的所有人的动作都被定格……整个空间里，只有自己还能动。</span></p><p><span>  没有来地他感觉有点冷，他侧头，却发现他的老损友李小黑正带着他从未见过的阴险的笑容看着他。有那么一秒的时间他感觉他也和整个空间一块凝滞了，但他并没有，他咧了咧嘴：“这到底是怎么回事……小……黑？”老王八感觉头脑一片混乱，无法理解究竟发生了什么。</span></p><p><span>  “李小黑”本阴阴地在那里笑着，听到他的话后却低头往地上啐了一口：“呸，老子才不是你那个老损友李小黑。老子乃地府三常之一黑有常。睁大你的狗眼看清楚了，老子哪有你那个李小黑那么黑？”</span></p><p><span>  老王八默默地打量了一下他，心里暗暗吐槽我感觉差不多，但嘴上还是说着：“嗯对，还真没有。”</span></p><p><span>  黑有常似乎有些不耐烦地挥了挥手：“我感觉你好像在说谎话。算了算了现在没时间跟你计较这些了。你快点走到你们教室的那个前门，快开门出去。你再不出去就回不去了。“</span></p><p><span>  老王八感觉一片混乱：”啥玩意？“</span></p><p><span>  黑有常一脸不耐烦，径直拿手推他：”快走，别废话。因为你这茬老子节假日里要加班贼鸡儿烦。不该问的别问，快走啊您佬！“</span></p><p><span>  ”可是我还是不明白发生了什么……“老王八犹犹豫豫。他只觉得面前的人看起来非常阴险，不可轻信。但黑有常急了：”大爷算求您了对面的这回下了大力气就算是我也只能撑一会儿！快走快走快走快走啊！“</span></p><p><span>  就在这时空间突然传来一阵震荡感。下一刻，原本被静止的一切开始有了运动的迹象。与此同时黑有常的脸色猛地一变，然后他的脸上浮现起了绝望与阴险混杂的诡异表情：”妈的完了。“</span></p><p><span>  ”什么完了……“老王八刚想问，却见黑有常一巴掌扇了过来。他下意识地闪过，只见那一巴掌打在桌上，那桌面瞬间崩裂出几道纹路，顿时一滴冷汗从老王八的额角滑落。这世界，到底咋了？</span></p><p><span>  ”妈的完了完了完了……“黑有常有些失魂落魄，随后他向老王八怒目而视：”老子的年终奖就这么没了……操你妈的你这傻逼咋就不听我话直接走呢？你他妈干什么的？“</span></p><p><span>  今日发生的一切原本已经让王八感觉很是荒谬了，被黑有常那么一骂，一阵无名火顿时上了七窍。他横着眼直接回怼：”我靠，你解释都不解释清楚到底发生了什么你就让我走？你看起来又那么阴险怎么让我相信你？“</span></p><p><span>  ”我去，长得阴险又不是我的错……阴差无论怎么样在阳人眼里基本上都显得阴险好不好？“黑有常显得非常恼火，狠狠地瞪着老王八，从他身上莫名有股森罗的气息涌现，有那么一瞬间老王八觉得他要暴起杀人，但下一刻他又泄了气：”算了算了，确实我也有错。大哥说的对，我确实还是太毛躁了……小子你先坐下来我跟你解释一下。“</span></p><p><span>  这时空间依然还在莫名地震荡。所有静止的事物似乎都在挣扎着想从什么束缚中挣开，挣扎的幅度越来越大。黑有常只是冷哼一声，下一刻所有事物挣扎的幅度小了很多，而后他傲然而又阴险地坐在了地上。老王八一脸懵逼，随他坐下。</span></p><p><span>  ”这话我也不知道该从何说起……“酝酿了一小会儿，黑有常缓缓开口，”这要从世界的起源开始讲起了……最开始，世界是一片不知道是由什么组成的混沌，在这个时间点上，这个世界没有空间的概念，一切都是一片混沌。然后有一天……“”盘古开天辟地？而后什么夸父逐日什么怒触不周山…...“老王八忍不住插嘴，但在看到黑有常狠狠的眼神后便不敢说话了。黑有常见他安静下来，继续他的叙述：”不知道为什么，这片混沌发生了改变。我也说不来到底是什么让它发生了改变，也无法描述这混沌改变了什么。我们只知道的是，这片混沌在发生变化之后，就诞生了空间，然后混沌逐渐化散充斥空间……最后诞生了世界。“</span></p><p><span>  ”在世界诞生之后，一切就存在了可能。世界孕育了宇宙，宇宙依托空间而存在。在这一过程中，世界并不是在一条&#39;轴线&#39;上，而是很奇妙的不断分化出不同的线。“说着黑有常用手对着老王八比划：”就像是你们的树状图那样，世界从一个端点处分化出两条甚至多条线。而那新诞生的线也会在一个端点处分化出新的线。于是世界便千变万化，素有&#39;万千世界&#39;之说。而同样的，因为世界千千万万，所以宇宙也便千千万万了。就像你现在所处的这个三维宇宙，与它类似的还有千千万万个；而在三维宇宙之外，还有一维、二维甚至更高维的宇宙……”</span></p><p><span>  “然而天行有常。世界宇宙如此之多千千万万，所以必须有什么东西在其中维持整个世界的秩序。自然而然地，应承天命，于是我们地府就诞生了。“黑有常不知道怎么了神色有些蛋疼，”接下来该怎么解释我们地府是如何诞生的呢？这一切缘由极为复杂……妈的老子不讲了。总之就是为了维持秩序，诞生了地府这个独立于大多数世界宇宙的特殊机构，里面的职员都是自然而然地诞生的——喂别这么看着我，我真的不知道该怎么解释。妈的老子懒得理你——总之我们这些职员都是自然而然诞生的，我们所有地府职员，负责维护着世界与宇宙的秩序。“</span></p><p><span>  ”当然，这样的特殊机构还有很多。比如天庭啊天堂啊地狱啊啥啥的，我们根据权能的不同进行不同的分工，辖管不同的宇宙世界与秩序。我们地府负责维护一部分的生灵的生死秩序，以及一部分宇宙世界。很不幸的，你所在的宇宙便是我门地府所管辖的。“黑有常的脸突然阴沉了下来，”由机构管辖的世界宇宙，一般而言那个机构负责维护的秩序权面便会扩大。例如说你们这个世界的空间秩序也便是由我们管辖的。你觉得你现在所处的地方是哪里？“他阴森森地用手指了指这片正在晃荡的空间。</span></p><p><span>  ”嗯……这不是我读书的地方吗？“老王八打量了一下自己所处的环境，除了这儿的空间在不断摇晃外，其他的一切都和自己所认识的一样，”这不就是地球中国蔗浆省漓水市晋云县晋云中学的高三八班吗？“</span></p><p><span>  ”错。此乃虚妄之境。“黑有常一副深不可测的表情，”你可知&#39;两仪八卦&#39;？“</span></p><p><span>  ”啥玩意？“</span></p><p><span>  ”是你们那个世界里的一个人捣鼓出来的玩意，用来解释世界的起源的……“黑有常用手势比划，”虽说还是太幼稚，没有考虑进其他因素。但这玩意在某种意义上是可以用来刻画法术的。而这虚妄之境，便是用这两仪八卦的原理刻画出的一种特殊的&#39;境&#39;，或者换句话讲，它便是是一个在你们的空间中存在着的特殊空间。这个空间很奇特，它可以结合受术人的内心呈现自己的模样。就像你在受术前正在教室里自修，好像在准备你们那里的啥期末考对吧？因为压力大，所以你脑子里想的都是那个教室里的情景，于是这个空间便呈现出你教室里的模样了……“</span></p><p><span>  ”等等，啥法术？受术者？有人对我使用法术了？“老王八立刻找到了重点，但黑有常不耐烦地打断他的提问：”你先听我讲。你可知这个虚妄之境是用来干什么的吗？“</span></p><p><span>  ”……啥作用？“</span></p><p><span>  ”欺天。“</span></p><p><span>  ”？？？啥玩意？“</span></p><p><span>  ”欺天。欺骗世界与宇宙秩序，让这里所发生的一切不会被世界和宇宙秩序监测到。“黑有常深吸一口气，”因为世界与宇宙本身存在着一种秩序，一切违逆这种秩序的行为都会被监测到而被世界宇宙所抹杀…...所以一般情况下我们地府是不会有什么活的，不然万千世界你以为我们地府一个机构能管得来？但是总会有一些别有用心者借助一些特殊的、能够欺瞒世界宇宙规则的手段破坏规则，以来达成自己的目的，每当有着些人这些行为出现，便需要我们特殊机构的人出面进行干涉。而今日，有那么一批人不知道为什么，想把你召唤到他们的世界去，于是他们先在你身上架构了一个虚妄之境的法术。“说着，黑有常轻轻往旁边打了一拳，下一秒那块被击中的空间立刻崩碎，露出了一块虚空。</span></p><p><span>  无人能够描述这是怎样的一副情景，哪怕是亲历者老王八也无法讲述。真要比喻的话，就是一个原本有色的世界中突然有一块变黑了，而那块黑色并不是纯粹的黑色，而是带着飘渺与虚无的感觉，它好像存在，却又好像不存在。此刻被黑有常击碎而露出的虚空之中隐隐飘飞着一条暗红色的纹络。”而这个虚妄之境下，又埋藏着另外一个空间传送法术。有人想通过这个法术将你传送到另外一个世界。“黑有常默默地补充道，”这也便是我为什么会出现在这里的原因。“</span></p><p><span>  一个绝望的想法瞬间从老王八心里划过，他抱着一丝希望向黑有常问道：”所以……您成功地阻断了这个法术？“</span></p><p><span>  ”没有。“黑有常冷冰冰地回复，”因为你的原因失败了。你就安心等待法术传送生效把你传送到另外一个世界吧。“</span></p><p><span>  ”我靠大哥你不是什么地府三常之一黑有常吗！你不是负责维护时空秩序的吗？还有怎么会是我的原因！“老王八心里一凉，马上大叫。开玩笑啊自己跑到异世界里，虽然说平常看各种小说番剧都觉得这个设定很刺激，但是真的发生在自己身上…...自己一介凡人何德何能去那人生地不熟的异世界去闯荡啊！这个地府三常也太坑了吧！</span></p><p><span>  ”一，我先前不说了嘛，这虚妄之境欺天的，而我们地府又是天道造物，所以这东西我们破不了，只能借助一些手段来干扰它。二，时空秩序和世界宇宙秩序是两个概念。三，因为我只能干扰，所以我能趁这个虚妄之境没有完全形成的时候给你开个离开这里的传送门。”黑有常指了指之前他让老王八推门出去的教室前门，“谁知道对面有所感觉故意加快了虚妄之境的形成，然后你又磨磨叽叽，所以就没办法咯。”</span></p><p><span>  老王八一脸黑线：“……你们地府三常那么没用的嘛……”</span></p><p><span>  黑有常勃然大怒：“你牛你上啊。”</span></p><p><span>  老王八脾气也上来了，刚想顶嘴，周围的空间突然猛烈地晃荡了起来。所有被停滞的事物在挣扎的幅度在一瞬间加剧。黑有常的脸色大变：“我日狗了这怎么可能？这帮犊子怎么能将法术加速那么快？”“我操你妈你这个地府三常还能再没用点吗？”老王八破口大骂，他明显感受到什么东西在被启动着，几缕无形的束力凭空产生，像是绳子般缠绕过他的四肢与肩将他死死锁在原地。“你就没其他办法了吗哥？”老王八怒吼。他死死挣扎但却动弹不得，一想到自己莫名其妙要穿越到异世界去，顿时有想哭的冲动。</span></p><p><span>  都是这个什么地府三常之一黑有常坑的自己啊！</span></p><p><span>  黑有常看起来也很着急，那张总是带着阴阴的黑脸上尽是汗珠滑落：“我没想到那帮犊子能够加快法术啊。你这件事我解决不了，所以我之前已经给我的二哥白有常发了消息，在这期间我依靠我们地府的术阵强行延缓这个空间传送法术的发动，等到我二哥过来就一切能解决了……不可能啊，法术怎么可能在确保无损耗的情形下加快发动……等等！无损耗无损耗无损耗……我明白了！”他突然间闭上了眼，约过了三四秒后又猛地睁开眼，那双眼睛射出惊喜的目光。</span></p><p><span>  “哈哈哈笑死爹了这帮犊子这么心急敢搞这出蛾子。陈易桃，我接下来说的话你要记好了，一个字也不能落下。”似乎是因为形式紧急，他的语速不断加快，“原本这个空间传送法术加了保密措施，但这帮犊子为了加速法术不惜将法阵进行损耗，我现在已经能够窥探到这个传送的各种信息了。这个法术是由一个名为&#39;海外&#39;的世界里的人发动了，原本你会被传送到海外世界中一个名为&#39;黑齿国&#39;的国度，这个法术我虽然无法终止但现在我可以修改你传送到的地点，接下来你会被传送到一个名为&#39;王八国&#39;的国度，我会在这里用剩下的时间通过地府三宝之判官笔，将你的血脉修改成&#39;玄武遗人&#39;——放心这是暂时的——这个血脉在那里是皇室所独有的，到那里你会被尊为神一般的存在…...具体为什么你到那里就会明白了。总之你要做的就是好好活下去，不出意外的话那帮黑齿国的人可能是要用你的灵魂与肉体干什么邪事，你要在王八国好好活着，千万不要被那帮黑齿国的犊子抓到了。那个世界也属于我们地府的管辖范围，不出多久我们地府三常便会来到将那帮犊子正法，到时候也会送你回去……妈的时间不够了。”黑有常一边说着，一边凭空抓住了一根狼毫笔，在老王八面前的空气挥画。这时空间的震荡越来越强，不少空间已经开始崩裂成为虚空，露出其中暗红色的纹络。哥麻烦你再说清楚点…...老王八想要吐槽，却心酸地发现那股束力延伸封住了他的嘴，他只能苦闷地看着黑有常在那里聚精会神地对空挥画。</span></p><p><span>  “上为乾。”他在老王八的天灵上方画了三横。</span></p><p><span>  “下为坤。”紧接着，他在老王八的下巴下方画了六个点。</span></p><p><span>  “左为离。”左太阳穴处，两横两点。</span></p><p><span>  “右为坎。”右太阳穴处，四点两横。</span></p><p><span>  黑有常缓缓收笔，随后在老王八的鼻尖处一点，与此同时他高声吟诵：“乾坤正，两仪成，八卦生。”</span></p><p><span>  狼毫笔突然疾疾向老王八天灵处刺去，在快要刺到时却又突然一顿，而后向左一挫，紧接着往左徐徐划出一个四分之一圆；随后又是一断，笔落老王八下巴处，又向右徐徐画出个四分之一圆；在画完后黑有常提笔又在下一秒放笔，将之前未画完的圆补完。动弹不得的老王八在这一过程中只觉一股暖流在他的身体中缓慢游走，舒舒服服得好像是在泡热水澡一般。如果不是嘴巴被封上了，他简直要发出一声舒服的呻吟。</span></p><p><span>  “这就是我之前跟你说过的两仪八卦。”黑有常收笔，有些悻悻地哀叹，“这回真的是便宜你了。我给你改了血脉后，就算你以后改回来还会有许些残余。玄武血脉诶。”</span></p><p><span>  正在享受那阵舒畅的老王八闻言心里一动。似乎在地府的体系中玄武和自己所听说的神话一样，都是了不起的存在？他看向黑有常，想用眼神询问他，但这是空间的震荡在这时达到了顶峰，剧烈的晃荡中，老王八只能看见黑有常所在的空间瞬乎崩碎，下一秒，整个虚妄之境都崩裂成虚空。老王八被震荡得头昏，眼神也逐渐模糊起来。剧烈的震荡中，他只看见黑有常对着他挥了挥手：“传送开始了。日后再见啊。陈易桃。”</span></p><blockquote><p><span>——欲知后事如何，且听下章（依然可能没有，我就是随便写写来损老王八的）分解</span></p></blockquote><hr /><blockquote><p><span>王八国西南部有座龟尾山，龟尾山上有个应天台，应天台里有座忘飞阁，忘飞阁里的龟星天很惆怅。</span></p></blockquote><h2><a name="二" class="md-header-anchor"></a><span>二</span></h2><p><span>  海外世界，王八国，龟尾山应天台。</span></p><p><span>   因为与我们所处的世界的环境不同，在海外世界里普遍采用一种名为“天演历”的本土历法。在天演历中，一年按照五百一十二天来算，而一年只分四季，不分月份。而因为海外世界的各个国家地理环境的不同，各国的气候存在着明显的差异，故而各国对于四季的长度划分也是不同的。</span></p><p><span>  而王八国位于海外世界的大陆北方，气候相较于其他国家而言偏冷，一年五百一十二天中在积温之上的天数一般不超过三百六十五天。按照王八国的天演历划分，春季为九十六天，夏季为六十四天，秋季为一百九十二天，冬季为一百六十天。对于王八国来说，秋季是最为重要的季节，因为一年当中秋季最长，而大部分粮食作物都是在秋季收获的。并且秋季的气候是最为适宜的，不冷不热，凉爽舒适，天气常常是那种温和的晴天，天空如水洗般澄澈，阳光似春风般和煦，温度正好。</span></p><p><span>  对于王八国龟尾山应天台的星象师们来说，秋天也是观测星象最好的季节，不光是因为秋季的天气常常晴朗无云，还因为每到这个季节，所有星辰的活动都异常活跃，很容易就能观测到，而资历老深的星象师甚至能通过它推测明年的气候变化与国家将要发生的大事。</span></p><p><span>  龟尾山位于王八国西南部，是整个王八国西南部的最高山。它北连苍鼋山脉，南接溟海盆地，四周又为平原环绕，因此拥有极好的星象观测条件。王八国民间有谚谓曰：“龟尾怀天灵，上能通星野。”其优越之处可窥一斑。故而王八国三大星象观测台之首应天台便设置在龟尾山上，平日坐镇着素有“二国师”之名的星象师龟星天与“王八国星象八博士”中的四人，更有大半个王八国的优秀星象师汇聚在这里。这些星象师们每日每夜都在这里不停地观测天象、记录数据、推演计算、探讨结果……最后总结出一份报告快马传递给住在王八国首都“万元”的王八国皇室。</span></p><p><span>  在海外世界中，星象具有一种无法解释的力量，它可以冥冥间昭示一定时间段内的未来。并且更有意思的是，它所昭示的未来是能通过人为行为改变的。因此，星象一直在海外世界的诸国中占据着重要的地位，王八国亦然。</span></p><p><span>  哦，忘记说了，王八国的臣民按照我们世界的定义并不能称之为人，因为他们都是乌龟或者鳖……不过这也都是闲话了。让我们先闭上嘴，将目光投向今天秋季的应天台吧。</span></p><p><span>  王八国秋第一百零一天，午后，龟尾山，应天台。</span></p><p><span>  王八国的秋天是很美的，在龟尾山这种生态保存良好的地方更为突出。一片晴空之下，是连绵起伏的山峦；在山峦的表面，覆盖着不同种类的秋落林木——火红的秋枫、金黄的银杏、半绿的载括，是这里最常见的三大林木；高低错落的地势、种类多异的林木，造就了龟尾山“一丈不同景，十里不同天”的奇特景貌。而应天台便修筑在这重重叠叠的山林之中。</span></p><p><span>  应天台并不单单只是一座像是广场一般的占星台，“应天台”是对整个龟尾山上所有的星象设施的系列总称。其中，龟尾山之巅建有应天台最主要的设施观星台；而龟尾山之巅旁边的两座小山包上则筑有图书馆、天演仪、气象管；在这之下的重重山林、山涧之间则不规则地分布着星象师们的住所与不同的观测台。而整个应天台的管理机构“应天台管理委员会”的所在地，便在龟尾山巅下来不远的一处山涧旁。</span></p><p><span>  应天台管理委员会常设委员会主席一人，副主席一人，与委员会成员八人。这十人皆由龟尾山常驻星象师推举，再由王八国皇室批准任职。为了方便工作，往届的应天台管理委员会的成员大都会将住所迁移到委员会附近。</span></p><p><span>  当然，偶尔也会有例外。</span></p><p><span>  本届的应天台管理委员会主席、王八国百年星象第一人、素有“二国师”之名的龟星天，便照旧他那我行我素的性格，依然住在他的“忘飞阁”里。这忘飞阁，乃是龟星天年轻时挥霍千金请来王八国第一建筑师鼋大柱为他量身打造的一栋三层阁楼式水榭，设在龟尾山南坡的一处水潭上。水潭旁便是一道飞流五丈而下的白瀑，三面为半绿的载括环绕。潭中多险石阻碍，偏偏潭水又有三丈之深。在这种地方建筑，本是极为困难，但鼋大柱不愧为王八国第一建筑师，在龟星天深厚的算学辅助下，竟成功在乱石之中、险水之上建造起了一座石台木阁楼水榭，并且建筑布局巧妙，借助堪舆玄学九宫八卦式设置回廊、房间。上一代王八国国王造访到此，也为其折服不已，称赞这忘飞阁乃“我国百年水榭建筑之最”。忘飞阁的环境十分优美，整座龟尾山恐怕都没有能和它媲美的住宅了。故而龟星天不肯迁居也是能被理解的了。</span></p><p><span>  而在今日，在王八国秋季的第一百零一天的午后，忘飞阁这儿倒是多了几分禅意。不远处是五丈白瀑飞落，而近旁却是碧色的静水，秋风吹过，水泛微波，而一林半黄的载括叶纷纷飘落。不一会儿，碧潭与忘飞阁旁的水上木栏走廊便飘满了落叶，再一阵风过，这儿只有微微的叶簌声与旁边飞瀑劈水的宏瀑声相互映衬。</span></p><p><span>  龟星天喜欢独居，这儿终年只住着他与他的亲传徒弟。除了应天台管理委员会与王八国星象八博士外，一般很少会有人造访。得益于此，如今已步入中年的龟星天常常能在这样的午后坐在水廊边的一处亭中慢悠悠地独自品着自种的香茗，一边喝一边思考人生，偶尔抬头看看风景吟吟小诗，好不闲适。哦，你问我他的徒弟在哪里？龟星天对徒弟的要求极为严格，每当他想一人独自喝茶时便会将徒弟支去忘飞阁的观测室去观察日星象，然后在日落时分慢悠悠地踱步到观测室检查徒弟的观测结果，如果观测数据什么的不够严谨，那么徒弟的晚饭就不用吃了。</span></p><p><span>  在海外世界中，白天借助特殊的工具也能够观测星象。不过白日会存在一个名为“日光偏差”的观测偏差，因为这个偏差的存在所有未经矫正的观测结果都会存在误差；并且更蛋疼的是每一日的日光偏差的偏差度都是不同的，所有要在白日观测星象的星象师们每天都要花上半天时间去计算当日的偏差度以来矫正结果。故而星象师大部分都是专攻夜星象的，钻研日星象的人数量极少。而龟星天之所以被美名“王八国百年星象第一人”，正是因为他于日、夜星象二者都极致精通，在两个领域都有着础石般的辉煌成就，其研究的“八勾九玄”算法更是星象界的圣经。计算日光偏差度对于龟星天来说，就像信手拈来般轻松，不消半炷香的时间便能靠心算完成，如果用笔算或者借助演算工具，那么几息内便能够完成，并且最可怕的是，几十年下来他的所有关于日光偏差度的计算没有一次出错。也因此做他的徒弟最为痛苦。虽说日光偏差度的计算套个公式就行，但它要套进的数值是繁之又繁，哪怕借助演算工具也可能会出错。因为此，龟星天的徒弟玄轩子度过了许多个没有晚饭的日子了。</span></p><p><span>  这天下午，玄轩子依然苦逼地呆在观测室里，龟星天也一如既往地坐在小亭里悠悠地喝着自己的茶。一切都很平常，直到…...</span></p><p><span>  “师傅师傅！师傅师傅！”一声声喊叫突然打破了这寻常的平静，只见玄轩子手里抓着几张纸急急忙忙地从忘飞阁内跑出，龟星天听到声音，一脸嫌弃地回头瞥了他一眼。玄轩子是一只很普通的绿壳龟，四只不是特别锋利的爪子、标准九宫格式绿龟壳、短小的头与那黑色的豆豆眼，完全没有龟星天年轻那般帅气。龟星天乃是一只金珙边苍色壳黄金眼的西海龟，年轻时放浪不羁、英姿飒爽，帅气堪比传说中的玄武，当年一直是王八国无数青春少女龟的梦中情龟白龟王子，如果不是因为他把全身心放在了星象上，他早就能脱离单身龟的行列，甚至能够迎娶皇室的小公主呢。龟星天也不知自己为什么要挑个那么丑的龟来继承自己的衣钵……也许是为了衬托自己的帅气？可能吧。</span></p><p><span>  “师傅师傅！师傅师傅！”玄轩子跑到了庭前，吵闹的声音顿时打破了刚要沉入为什么自己要挑个这么丑的徒弟的思考的龟星天，他气得振了振自己已半白的龟须：“吵什么吵，为师没有教过你身为星象师一定要保持沉着冷静、遇事不得慌张吗？”</span></p><p><span>  被龟星天那么一骂，玄轩子立刻就痿了下来：“对不起师傅……徒儿知错了。但是徒儿刚刚监测到的日星象实在是有些诡异。徒儿想让您老亲自看看。”</span></p><p><span>  ”诡异？拿来给为师看看。“ 龟星天的好奇心被吊上来了。要知道，虽然玄轩子长得一点也不帅也在算学上不是特别聪明，但好歹是他教出来的徒弟，见识算力眼界完全能打爆一般的星象师，平常那些水平一般的星象师所见到的“奇异星象”，在他看来完全是很平淡无奇的。如果观测到的日星象连玄轩子都觉得诡异，那么必然对龟星天是有一定的研究价值的。</span></p><p><span>  龟星天从玄轩子手中接过那几张纸。这几张纸看似普通，实际上都是经过特殊加工的、专门用于星象测绘的绘图纸，上面的笔墨完全不会出现洇墨的现象，故而精准度就高上了几个台阶。龟星天匆匆扫了几眼，看到玄轩子简洁精准的绘图，脸上没露什么颜色，但心里确实欣慰无比。看样子这小子离出师的境地不远啦，龟星天捋着龟须，一边在心里感慨龟世无常，一边检视着草图。还没看几眼，他便惊咦出声：“诶，斗冲虚危，室倚斜壁，牛女结对，有点意思。”</span></p><p><span>  “是的。”玄轩子恭敬地作了一鞠，“弟子所读《范谱》曰：&#39;斗冲虚危，气运盛也。&#39;而《星象堪舆》又言：‘牛女结对，喜也；室倚斜壁，室之徙也。’再结合本国两百年来的日星象观测记录……”</span></p><p><span>  “这是王室更替的预兆。”龟星天捋了捋龟须，“龟仁王二十八年秋第一百二十四天崩，该日之星象亦如此，而后德王立，王八国随之迎来了长达三十四年的大发展……但是，你也知道的……”龟星天面露难色，玄轩子顺着他的意思继续接道：“如今我们王八国在位的龟寿王没有子嗣…...并且陛下早在三年前因为不堪繁重的政务偷偷跑路溜出去玩了，全靠可怜的龟皓国师一直摄政。所以说按理来讲，王室不太可能更替，但是星象却呈现如此……真的有些不合常理。而正因为这星象太过诡异，徒儿愚昧，难能理解，所以前来询问师傅是否另有他解。”说完他又对着龟星天恭敬一拜：”愿师傅赐教。“</span></p><p><span>  龟星天心中顿时感慨万分，他并没有先回答玄轩子的问题，而是捋着龟须反问道：”轩子，你认为星象一定是正确的吗？“</span></p><p><span>  玄轩子一怔：”我们身为星象师，首先就必须要相信星象，相信星象所兆示的一切都是正确的，我们之所以会因为星象得出错误的结论是因为我们对星象的解是错误的……“</span></p><p><span>  龟星天摆摆手：”我不是要你背这个。我是想问问你自己的观点，我想知道你自己是怎么想的。“</span></p><p><span>  玄轩子愣愣的：”但是，这可是您领我入门的第一天便教我的……“</span></p><p><span>  ”这确实是我在领你进门的第一天所教授你的。“龟星天打断了他，”但现在，我想知道你自己是怎么想的。“</span></p><p><span>  玄轩子立刻陷入了沉默，那只短小的头不安地低了下去。他并不明白为什么今天师傅会突然问起这个，到底应该怎么回答呢？挣扎了良久，他才弱弱地说出自己的真实想法：”恕弟子冒犯。弟子……并不相信。“</span></p><p><span>  ”唉——“龟星天闻言长长地叹了口气，这口气长吁了一分钟多。玄轩子低着头，只感觉自己的师傅的那声叹气里有着很多很多他不能理解的东西。玄轩子有些不安，偷偷地打量着自己的师傅，只见那只黄金眼的帅龟——如今龟须已经半白、昔日的黄金眼也黯淡了不少——望着天空，不知道在想着什么。一时间师徒二人都陷入了沉默。远处的白瀑依然在那里哗哗，近旁秋风拂过而发出的林声依然扑簌作响，一片半黄半绿的载括叶悠悠飞入亭中，飘落在两人之间。</span></p><p><span>  良久，玄轩子先打破了沉默：”对不起师傅，徒儿让您失望了。“语气中尽是羞愧。但是龟星天却突然一龟爪拍在他的头上：”对不起个屁。你做错了啥？“</span></p><p><span>  这一龟爪拍得不轻不重，玄轩子顿时茫然了。在他看来，师傅说的都是对的，他自己不相信师傅所说的已经是大逆不道了，更何况自己还当着师傅的面说了呢？尽管是师傅让他自己说的，但他有着这种心思本就是错的啊。正在他有些手足无措的时候，却听龟星天在那里叹气着说道：</span></p><p><span>  ”很多时候我在想，我龟星天年轻时侧壳风流、帅逼玄武，天姿聪颖、少龟能敌，为什么年老了要收像你这么丑这么普通的绿壳龟作徒弟呢？你长得又不帅，天姿又有些愚钝，除了画图上有些天分外，无论是算学还是推演都比不上我同一辈的那帮家伙收的弟子。为什么我要选你呢？“</span></p><p><span>  ”后来我想了想，好像就是因为你丑，所以我想用你衬托我的帅；因为你天姿不行，更衬得出为师的才学。我之所以收你，只是想要一个人能传承我的衣钵。恰好你在我有这个想法的时候出现了罢了。“</span></p><p><span>  ”但今天我才想起。为师当初之所以选你，是因为你的心思最单纯，对于求知有着自己的渴望。你不像国内其他青年才龟那般傲气逼人，想拜我为师也不是为了沾沾我的名气。所以虽说你傻了一点，但是我最后还是收了你。“</span></p><p><span>  玄轩子的不安感不断地加剧。他有些无助地看着自己的师傅，不明白为什么今天师傅要突然跟自己说这些。但是龟星天没有看他，依然望着天，自顾自地唠嗑：</span></p><p><span>  ”你自己确实很努力，虽然你天姿不咋地，但你已经靠着自己的努力达到了一流的星象师的水准，并且在为师耳渲目染的影响下，眼界与见识高出常人不少。为师能教你的东西你基本上都已经学会了。但是为师早就发现了一点，你对为师所教授的东西虽然全盘吸收了，但从未有过自己的创新。虽然学的人是&#39;玄轩子&#39;，但实际上身为星象师的&#39;玄轩子&#39;并不是&#39;玄轩子&#39;，而是&#39;玄星天&#39;啊。“</span></p><p><span> 玄轩子不安地打岔：“弟子愚昧，并不明白。”玄轩子心里总隐隐有着一种不安感，但他说不出不安的到底是什么。他只知道，他不是很想师傅继续说下去。不安，不安，极度的不安，可以说是一种焦虑，好像继续说下去就会引出一件会对他的命运影响很大的事情来。玄轩子在心中默默祈祷赶快发生些什么事情把龟星天要说的话打断，无论怎么荒谬都行，只要能打断就好。</span></p><p><span>  龟星天依然在那里惆怅地望着天：”你并没有真正地成为一名星象师。或者换句话说，身为星象师的你所掌握的东西全都不是你的，而是……“今日是晴天，天空异样地澄蓝，龟星天突然看见天空中有什么东西在快速地落下来，越来越近，”身为为师的我……“他的话未说完，只见那件从空中坠落的事物略过他眼前，然后砸进了他面前的碧潭——</span></p><p><span>  ”轰。“</span></p><p><span>  巨大的水浪激了起来打断了他的自语。白花花的水浪瞬间卷入亭中，龟星天与玄轩子被水浪打了个正着，脚下一个不稳，双双摔在地上。与其同时，某个男子的惨叫响彻亭台：</span></p><p><span>  ”我靠黑有常你个王八蛋为什么把我传到那么高的地方啊啊啊啊啊啊我他妈恐高啊啊啊啊啊啊啊啊啊啊!“</span></p><blockquote><p><span>欲知后事如何，且听下章（依然可能没有）分解。</span></p><p><span>看样子，老王八是安全着陆到海外世界的王八国了。</span></p></blockquote><hr /><p>&nbsp;</p><h2><a name="end" class="md-header-anchor"></a><span>End</span></h2><p><span>返回主站链接：</span><a href='http://wendaolee.github.io/PrivateBase/Index.html'><span>【咳咳】</span></a></p><p>&nbsp;</p><p><span>    </span></p><p><span>  </span></p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><h3><a name="" class="md-header-anchor"></a></h3><p>&nbsp;</p><p>&nbsp;</p></div>
+</body>
+</html>
