@@ -97,7 +97,7 @@ p > .md-image:only-child { display: inline-block; width: 100%; }
 #write .MathJax_Display { margin: 0.8em 0px 0px; }
 .md-math-block { width: 100%; }
 .md-math-block:not(:empty)::after { display: none; }
-[contenteditable="true"]:active, [contenteditable="true"]:focus { outline: 0px; box-shadow: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
 .md-task-list-item { position: relative; list-style-type: none; }
 .task-list-item.md-task-list-item { padding-left: 0px; }
 .md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
@@ -141,12 +141,16 @@ a.md-print-anchor { white-space: pre !important; border: none !important; displa
 .MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
 .os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
 .md-diagram-panel > svg { max-width: 100%; }
-[lang="mermaid"] svg, [lang="flow"] svg { max-width: 100%; height: auto; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
 [lang="mermaid"] .node text { font-size: 1rem; }
 table tr th { border-bottom-width: 0px; }
 video { max-width: 100%; display: block; margin: 0px auto; }
 iframe { max-width: 100%; width: 100%; border: none; }
 .highlight td, .highlight tr { border: 0px; }
+svg[id^="mermaidChart"] { line-height: 1em; }
+mark { background-color: rgb(255, 255, 0); color: rgb(0, 0, 0); background-position: initial initial; background-repeat: initial initial; }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+mark .md-meta { color: rgb(0, 0, 0); opacity: 0.3 !important; }
 
 
 /* meyer reset -- http://meyerweb.com/eric/tools/css/reset/ , v2.0 | 20110126 | License: none (public domain) */
@@ -679,7 +683,7 @@ header, .context-menu, .megamenu-content, footer {
 }
 
 .md-task-list-item>input {
-	margin-left: -1.6em;
+	margin-left: -1.7em;
 	margin-top: calc(1rem - 12px);
 }
 
@@ -712,10 +716,14 @@ input {
 	box-shadow: none;
 }
 
+#sidebar-loading-template, #sidebar-loading-template.file-list-item {
+	color: #777;
+}
+
  .typora-export li, .typora-export p, .typora-export,  .footnote-line {white-space: normal;} 
 </style>
 </head>
 <body class='typora-export' >
-<div  id='write'  class = 'is-mac'><h1><a name="李問道的小站---the-area-of-wendaolee" class="md-header-anchor"></a><span>李問道的小站 - The Area Of WendaoLee</span></h1><blockquote><p><span>可惜人总要往前走</span></p></blockquote><h3><a name="・寄语-about" class="md-header-anchor"></a><strong><span>・寄语</span></strong><span> About</span></h3><p><span>  于万千世界中的一隅，二〇一九年十一月十四日，由李問道創建。</span></p><p><span>  有些話，害怕說出；憋在心裏，又太難受。於是便有了這塊地。是個避風港，也是座空城。</span></p><p><span>  我的灵魂栖息此处，滚烫于字里行间——绝大部分的思考、挣扎，我的苦痛与难，以及为人仅有的在缝隙间抓住的幸福。</span></p><p><span>  活着很美好，但烦恼太多，也是种负担。</span></p><p><span>  尽量让自己轻松点——虽说这很不容易。</span></p><p><span>  感谢你过路人，愿意驻足片刻，留下你生命的几分几秒。愿你永远幸福，前程似锦，</span><em><span>&quot;A glittering future ahead of you</span></em><span>&quot;。</span></p><p><span>  活总是要活着，毕竟心愿未了，人世羁绊太多。虽然无关者的话早已厌倦，但也还是嘻嘻哈哈地就过来了。人啊，谁又能真正懂谁呢？有时候，要真正懂一个人，往往要付出一生的代价。</span></p><p><span>  而一生太短，只想投入真情。</span></p><p><span>                                                                       ——</span><strong><span>李問道  二〇一九年十一月十五日</span></strong></p><p><span>注：前面繁体是因为输入法还没改，后来懒得改了，就这样吧。</span></p><hr /><blockquote><p><span>&quot;苔痕深院雨，人影小窗灯。&quot;</span></p></blockquote><hr /><h2><a name="最新更新----------------------the-latest-updated" class="md-header-anchor"></a><span>最新更新                      THE LATEST UPDATED</span></h2><h1><a name="2020115----------------------------废话" class="md-header-anchor"></a><span>2020.1.15                            废话</span></h1><p><span>我就更新一下这个似乎没人看的主页。放一下自己之前写的一首诗。</span></p><blockquote><p><span>无题</span></p><p><span>西风寥寥落桥红，丁香凋残结心同。</span></p><p><span>半晌贪欢都作梦，一朝客醒尽成空。</span></p><p><span>昔年寻醉吟月下，今夜静坐候寺钟。</span></p><p><span>烛光摇摇总不定，身处天地画图中。</span></p></blockquote><p><span>最近着手整理一下2019年的文稿，弄个小集子。打算取名《断章集》。</span></p><p>&nbsp;</p><p><span>有个能随意说话的角落可真好。</span></p></div>
+<div  id='write'  class = 'is-mac'><h1><a name="李問道的小站---the-area-of-wendaolee" class="md-header-anchor"></a><span>李問道的小站 - The Area Of WendaoLee</span></h1><blockquote><p><span>可惜人总要往前走</span></p></blockquote><h3><a name="・寄语-about" class="md-header-anchor"></a><strong><span>・寄语</span></strong><span> About</span></h3><p><span>  于万千世界中的一隅，二〇一九年十一月十四日，由李問道創建。</span></p><p><span>  有些話，害怕說出；憋在心裏，又太難受。於是便有了這塊地。是個避風港，也是座空城。</span></p><p><span>  我的灵魂栖息此处，滚烫于字里行间——绝大部分的思考、挣扎，我的苦痛与难，以及为人仅有的在缝隙间抓住的幸福。</span></p><p><span>  活着很美好，但烦恼太多，也是种负担。</span></p><p><span>  尽量让自己轻松点——虽说这很不容易。</span></p><p><span>  感谢你过路人，愿意驻足片刻，留下你生命的几分几秒。愿你永远幸福，前程似锦，</span><em><span>&quot;A glittering future ahead of you</span></em><span>&quot;。</span></p><p><span>  活总是要活着，毕竟心愿未了，人世羁绊太多。虽然无关者的话早已厌倦，但也还是嘻嘻哈哈地就过来了。人啊，谁又能真正懂谁呢？有时候，要真正懂一个人，往往要付出一生的代价。</span></p><p><span>  而一生太短，只想投入真情。</span></p><p><span>                                                                       ——</span><strong><span>李問道  二〇一九年十一月十五日</span></strong></p><p><span>注：前面繁体是因为输入法还没改，后来懒得改了，就这样吧。</span></p><hr /><blockquote><p><span>&quot;苔痕深院雨，人影小窗灯。&quot;</span></p></blockquote><hr /><h2><a name="动态更新----------------------the--updated" class="md-header-anchor"></a><span>动态更新                      THE  UPDATED</span></h2><h1><a name="2020210" class="md-header-anchor"></a><span>2020.2.10                                         </span></h1><p><span>寂寞无人说。</span></p><p><span>“话多只是因为害怕沉默。”</span></p><p><span>但是人还是要往前走。</span></p><h1><a name="2020115------------------------------------------废话" class="md-header-anchor"></a><span>2020.1.15                                          废话</span></h1><p><span>我就更新一下这个似乎没人看的主页。放一下自己之前写的一首诗。</span></p><blockquote><p><span>无题</span></p><p><span>西风寥寥落桥红，丁香凋残结心同。</span></p><p><span>半晌贪欢都作梦，一朝客醒尽成空。</span></p><p><span>昔年寻醉吟月下，今夜静坐候寺钟。</span></p><p><span>烛光摇摇总不定，身处天地画图中。</span></p></blockquote><p><span>最近着手整理一下2019年的文稿，弄个小集子。打算取名《断章集》。</span></p><p>&nbsp;</p><p><span>有个能随意说话的角落可真好。</span></p></div>
 </body>
 </html>
